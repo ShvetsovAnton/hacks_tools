@@ -82,7 +82,7 @@ from scripts import *
 fix_marks 
 ```
 В ответ получим ответ как на картинке. Значит скрипт подключен и можно приступать.
-[![imageup.ru](https://imageup.ru/img226/4179251/pycharm64_z0qwwpfimx.png)](https://imageup.ru/img226/4179251/pycharm64_z0qwwpfimx.png.html)
+[![imageup.ru](https://imageup.ru/img22/4180055/pycharm64_sdbxsgvg9x.png)](https://imageup.ru/img22/4180055/pycharm64_sdbxsgvg9x.png.html)
  
 ***
 
