@@ -43,7 +43,7 @@ def create_commendation(name_schoolkid, name_subject):
         )
     except Subject.MultipleObjectsReturned:
         raise Subject.MultipleObjectsReturned(
-            f"Уточните название предмета хотели справить - {name_subject} "
+            f"Уточните название предмета, вы хотели исправить - {name_subject}"
         )
     try:
         lesson = Lesson.objects.select_related(
@@ -56,7 +56,9 @@ def create_commendation(name_schoolkid, name_subject):
             created=lesson.date,
             schoolkid=schoolkid)
     except AttributeError:
-        raise print(f"Кажется по предмету {name_subject} ещё не было уроков")
+        raise AttributeError(
+            f"Кажется по предмету {name_subject} ещё не было уроков"
+        )
 
 
 def fix_marks(name_schoolkid):
